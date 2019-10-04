@@ -1,4 +1,4 @@
-# nit_project
+# student_managment_system
 
 a django project for creating and maintaining the student database of my college
 
