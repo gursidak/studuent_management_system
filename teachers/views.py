@@ -142,27 +142,6 @@ def view_student(request, x, y, z):
     d = get_teach_details(request)
     id = x
     return render(request, 'teachers/mentees.html', d)
-<<<<<<< HEAD
-
-
-def manage_teacher(request):
-    if Student.objects.filter(id=request.user.username):
-        title = "ERROR"
-        error = ['Students cannot view this page!']
-        return message(title, error, request)
-    d = get_teach_details(request)
-
-    hod = Teacher.objects.get(id=request.user.username)
-    if not hod.is_hod:
-        title = "ERROR"
-        error = ['Only HODs can access this page']
-        return message(title, error, request)
-
-    teachers = Teacher.objects.filter(dept=hod.dept)
-    d['title'] = 'Manage Teachers'
-    d['teacher'] = teachers
-    return render(request, 'teachers/hod_teacher_view.html', d)
-=======
 #to view profile of hod,teacher,principal
 def profile(request):
     d = get_teach_details(request)
@@ -227,4 +206,3 @@ def search_filter(request):
 
 
     return HttpResponse(rslt[:10])
->>>>>>> d839aef8013119d1e58a5fed334de8b2b8616f6a
