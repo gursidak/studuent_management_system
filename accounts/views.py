@@ -15,7 +15,7 @@ from .models import Temp_user
 
 
 def login(request):
-    if request.user.is_authenticated:
+    if request.user 1.is_authenticated:
         return redirect('index')
     else:
         if request.method == 'POST':
