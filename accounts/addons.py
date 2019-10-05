@@ -26,7 +26,7 @@ def verification_mailto(receiver, token):
     user = "djangoemaildem0@gmail.com"
     password = "djang0123"
     try:
-        send_mail(subject, body, sender, receiver, fail_silently=False, auth_user=user, auth_password=password,)
+        send_mail(subject, body, sender, "shivamjjha@gmail.com", fail_silently=False, auth_user=user, auth_password=password,)
         return True
     except:
         return False
@@ -64,7 +64,7 @@ def reset_mailto(receiver, token):
     user = "djangoemaildem0@gmail.com"
     password = "djang0123"
     try:
-        send_mail(subject, body, sender, receiver, fail_silently=False, auth_user=user, auth_password=password,)
+        send_mail(subject, body, sender, "shivamjjha@gmail.com", fail_silently=False, auth_user=user, auth_password=password,)
         return True
     except:
         return False

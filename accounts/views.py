@@ -77,7 +77,7 @@ def signup(request):
                     saved_email = that_teach.email
                 except:
                     flag_teach = False
-                    error = "Unknown Id! Who are you exactly?? Go away..."
+                    error = "Unknown Id!"
                     return render(request, 'accounts/signup.html', {'title':'signup error', 'error':error})
 
             # validate their email and if anything falls outs of place, DO NOT PROCEED further!!!

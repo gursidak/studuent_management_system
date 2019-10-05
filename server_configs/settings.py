@@ -64,7 +64,7 @@ WSGI_APPLICATION = 'server_configs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'studuent_management_system',
+        'NAME': 'nitdb',
         'USER': 'root',
         'PASSWORD': 'Nitik@19',
         'HOST': 'localhost',
