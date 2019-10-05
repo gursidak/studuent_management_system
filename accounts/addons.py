@@ -22,11 +22,11 @@ def verification_mailto(receiver, token):
     Click on this link to verify your Email:\n\t""" + url + """\n\n
     Ignore this message if this was not what you were expecting!\n\n"""
     
-    sender = "Narula Institute Of Technology"
+    sender = "GNDEC"
     user = "djangoemaildem0@gmail.com"
     password = "djang0123"
     try:
-        send_mail(subject, body, sender, receiver, fail_silently=False, auth_user=user, auth_password=password,)
+        send_mail(subject, body, sender, "prashantkumarptb@gmail.com", fail_silently=False, auth_user=user, auth_password=password,)
         return True
     except:
         return False
@@ -60,11 +60,11 @@ def reset_mailto(receiver, token):
     Click on this link to verify your Email:\n\t""" + url + """\n\n
     IF YOU DID NOT TRIED TO RESET YOUR PASSWORD, CONTACT YOUR HOD! Your A/C may be in danger!\n\n"""
     
-    sender = "Narula Institute Of Technology"
+    sender = "GNDEC"
     user = "djangoemaildem0@gmail.com"
     password = "djang0123"
     try:
-        send_mail(subject, body, sender, receiver, fail_silently=False, auth_user=user, auth_password=password,)
+        send_mail(subject, body, sender, "prashantkumarptb@gmail.com", fail_silently=False, auth_user=user, auth_password=password,)
         return True
     except:
         return False
